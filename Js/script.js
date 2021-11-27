@@ -17,4 +17,4 @@ let q4 = +prompt('На сколько оцените его?',``);
 personalMovieDB.movies[q1] = q2;
 personalMovieDB.movies[q3] = q4;
 
-console.log(personalMovieDB)
+console.log(personalMovieDB);
