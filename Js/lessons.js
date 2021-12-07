@@ -61,21 +61,19 @@ for (let i = 0; i < 5; i++) {
 }*/
 
 //Functions
-
-let num = 20;
-
-function showFirstMesage (text) {
+/*let num = 20;
+function showFirstMesage(text) {
     console.log(text);
-    num = 22;
-    console.log(text + num);
-    
+   let num = 23;
+   console.log(num);
 }
 
 showFirstMesage(`Hello world!`);
+console.log(num);
 
 function calc (a, b) {
-    return (a + b);
-    console.log(`bal`) //unreachable code
+    return a + b;
+    console.log(`bal`); //unreachable code
 }
 
 console.log(calc (1, 4));
@@ -98,4 +96,31 @@ const calc1 = (a, b) => {
 
 console.log(calc1(1,4));
 
-const calc2 = (a, b) =>  (a+b);
+const calc2 = (a, b) =>  (a+b);*/
+
+//String and numbers
+
+const str = `test`;
+//const arr = [1,2,4];
+
+//console.log(str.toUpperCase());
+//console.log(str.toLowerCase());
+console.log(str);
+
+const fruit = `some fruit`;
+
+console.log(fruit.indexOf(`q`));
+
+const logg = `Hello world!`;
+//console.log(logg.slice(6, 11));
+console.log(logg.substring(6, 11));
+console.log(logg.substr(6, 5));
+
+
+const num = 12.2;
+console.log(Math.round(num));
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
+
+const str1 = `bla`;
