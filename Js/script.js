@@ -55,12 +55,12 @@ function detectPersonalLevel() {
 
 detectPersonalLevel ();
 
-const showMyDB = () => {
-    if (personalMovieDB.privat == false) {
+const showMyDB = (hidden) => {
+    if (!hidden) {
         console.log(personalMovieDB);
     }
 };
-showMyDB ();
+showMyDB (personalMovieDB.privat);
 
 const writeYourGenres = function () {
     for(let i = 0; i < 3; i++) {
