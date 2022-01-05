@@ -373,3 +373,35 @@ const q = {
 const newObj = {...q};
 
 console.log(newObj);
+
+// OOP Объектно Ориентированное програмирование.
+
+let str = `some`;
+let strObj = new String (str);
+
+console.log(typeof(str));
+console.log(typeof(strObj));
+
+console.dir([1, 2, 3]);
+
+//examples
+
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function () {
+        console.log(`Hello`);
+    }
+};
+
+const john = Object.create(soldier);
+
+/*const john = {
+    health: 100,
+};*/
+
+//Object.setPrototypeOf(john, soldier); //Устанавливает прототип
+
+//john.__proto__ = soldier; //устаревший метод
+john.sayHello();
+
