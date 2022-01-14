@@ -405,3 +405,49 @@ const john = Object.create(soldier);
 //john.__proto__ = soldier; //устаревший метод
 john.sayHello();
 
+
+//Динамическая типизация (tricks)
+
+//To string
+//1)
+console.log(typeof(String(null)));
+console.log(String(4));
+//2) Concotination
+console.log(typeof(5+``));
+
+const num1 = 5;
+console.log("https://vk.com/catalog/" + num1);
+const fontSize = 26 + `px`;
+
+//To NUmber
+//1)
+console.log(typeof(Number(`4`)));
+//2)
+console.log(typeof(+`5`));
+//3)
+console.log(typeof(parseInt(`15px`, 10)));
+
+
+let ans = +prompt(`Hello`, ``);
+
+
+// To boolean
+
+//1)false
+//0, ``, false, null, undefined, NaN;
+
+let switcher = null;
+if (switcher) {
+    console.log(`working...`);
+} else {
+    switcher = 1;
+}
+
+console.log(switcher);
+
+//2)
+console.log(typeof(Boolean(`0`)));
+//3)
+console.log(typeof(!!`44444`));
+
+
